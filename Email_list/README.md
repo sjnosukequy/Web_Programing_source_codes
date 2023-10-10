@@ -1,7 +1,7 @@
 # servlet/jsp vscode template
-F*CK ECLIPSE ME AND THE BOYS USE VSCODE. 
+ME AND THE BOYS USE VSCODE. 
 
-*`This template already has javax servlet depedencies.`*
+*`This template already has jakarta servlet and jstl depedencies.`*
 
 ## REQUIREMENTS
 + [Extension Pack for Java for vscode](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
