@@ -1,0 +1,228 @@
+/* The styles for the elements */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+h1 {     
+    font-size: 200%;
+    color: teal;
+    margin-bottom: .5em;    
+}
+h2 {     
+    font-size: 120%;
+    color: teal;
+    margin-bottom: .5em;    
+}
+a:-webkit-any-link {
+    color: black;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+a:-webkit-any-link:hover {
+    color: royalblue;
+}
+
+#cd_lists
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	background: rgb(0,0,0,0.1);
+}
+#disc
+{
+	height: auto;
+	margin-bottom: 10px;
+}
+.BG_ALBUM
+{
+	height: 300px;
+	width: 300px;
+	@media (max-width:800px) { height: 200px;
+	width: 200px; }
+	object-fit: cover;
+	object-position: 0 50%;
+	-webkit-mask-image: radial-gradient(circle at 50% 50%, black 60%, rgba(0, 0, 0, 0) 50%);
+	mask-image: radial-gradient(circle at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);
+	-webkit-animation: spin 4s infinite linear;
+}
+#big_black
+{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-position: -85px -85px;
+	@media (max-width:800px) { height: 200px;
+	width: 200px; background-position: -140px -140px; }
+}
+#smol_black
+{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	left: 135px;
+	bottom: 168px;
+	background: white;
+	border-radius: 50%;
+	@media (max-width:800px) { height: 20px;
+	width: 20px; left: 90px;
+	bottom: 110px; }
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+.BUTT_BOX
+{
+	display: flex;
+	gap: 10px;
+}
+#cd_lists a
+{
+	margin: 10px;
+    flex: calc(33% - 20px);
+	display: flex;
+	width: 100px;
+	flex-direction: column;
+	align-items: center;
+	transition: all 1s;
+}
+#cd_lists a:hover
+{
+	transform: scale(1.1);
+}
+#cd_lists a p
+{
+	text-align: center;
+}
+#cd_lists a img{
+	height: 150px;
+	width: 150px;
+}
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {  /* An attribute selector */
+    width: 15em;
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;
+}
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
+br {
+    clear: both;
+}
+
+/* The styles for the tables */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50em;
+    border-width: 0px 0px 0px 0px;
+    background: #FAEDCB;
+    box-shadow: 5px 5px teal;
+	@media (max-width:800px) { font-size:9px;}
+}
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .5em;
+    border-width: 0px 0px 1px 0px;
+}
+th:nth-child(odd) , td:nth-child(odd)  {
+    background: #f9f6f2;
+}
+tr{
+	height: 30px;
+}
+
+/* The styles for the classes */
+.pad_top {
+    padding-top: 0.25em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+.align_left {
+    text-align: left;
+}
+.align_right {
+    text-align: left;
+}
+a button
+{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: white;
+	background-color: teal;
+	border: solid #013737;
+	border-radius: 16px;
+	border-width: 0 0 5px;
+	padding: 1rem;
+	transition: filter 0.2s;
+	font-weight: 900;
+	@media (max-width:800px) { font-size:11px; }
+}
+
+a button:hover
+{
+	cursor:pointer;
+	filter: brightness(1.1);
+}
+.BUTT
+{
+    color: white !important;
+	background-color: teal;
+	border: solid #013737;
+	border-radius: 16px;
+	border-width: 0 0 5px;
+	padding: 5px 10px;
+	transition: filter 0.2s;
+	font-weight: 900;
+	margin-top: 10px;
+	@media (max-width:800px)
+	{
+		font-size:11px;
+	}
+}
+.BUTT:hover
+{
+	color: white !important;
+	cursor:pointer;
+	filter: brightness(1.1);
+}
+#container
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	@media (max-width:800px)
+	{
+		font-size:9px;
+	}
+}
+#content
+{
+	padding: 20px;
+	border-radius: 10px;
+	border-width: 0px 0px 0px 0px;
+    background: rgb(0,0,0,0.1);
+    box-shadow: 5px 5px teal;
+}
+.text_box
+{
+	display: block;
+	outline: none;
+    padding: 5px;
+    display: block;
+    border: none;
+}
